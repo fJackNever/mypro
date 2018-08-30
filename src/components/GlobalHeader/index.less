@@ -1,0 +1,83 @@
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+  height: 64px;
+  padding: 0 12px 0 0;
+  background: #001529;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+  display: flex;
+  :global{
+    .ant-menu{
+      margin-left:4.4rem;
+      li{
+        color:#fff;
+        display: flex;
+        height:100%;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.toolnav{
+  position: absolute;
+  right: 26px;
+  display:flex;
+  .toolaction{
+    cursor: pointer;
+    display: block;
+    padding:0 12px;
+    i{
+      font-size: 1.06rem;
+      color:rgba(255, 255, 255, 0.65);
+    }
+    &:hover{
+      background: #1890ff;
+    }
+  }
+  :global{
+    .logoutSelect{
+      &:hover{
+        background: #1890ff;
+      }
+      .logoutSpan1{
+        padding:0 10px;
+        color:#fff;
+        font-size:0.92rem;
+      }
+      .logoutSpan2{
+        padding-right:10px;
+        color:rgb(255, 85, 0);
+        font-size:0.92rem
+      }
+      i{
+        color:rgba(255, 255, 255, 0.65)
+      }
+    }
+  }
+
+}
+
+
+.companyTitle{
+  h1{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    color:rgba(255, 255, 255, 0.9)
+  }
+}
+
+:global {
+  .ant-layout {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+

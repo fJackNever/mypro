@@ -1,0 +1,130 @@
+@import '~antd/lib/style/themes/default.less';
+
+@bgColor:#fff;
+
+.container {
+  height: 100vh;
+  overflow: auto;
+  background: @bgColor;
+}
+
+.content {
+  height:650px;
+  width:100%;
+  background: url(https://rescdn.qqmail.com/bizmail/zh_CN/htmledition/images/bizmail/login_background25dcc7.png) no-repeat;
+  background-size: 4000px 650px;
+  position: relative;
+}
+
+:global{
+  .ant-carousel {
+      .slick-dots{
+        bottom:-35px !important;
+      }
+    }
+}
+
+.contentIn{
+  width:50%;
+  margin-left:10%;
+  .antCarousel{
+      margin-top: 8%;
+  }
+  .divWrap{
+    display: flex !important;
+    flex-flow: row;
+    .divImg{
+      width:50%;
+      img{
+        width:190px;
+        margin:0 auto;
+      }
+    }
+    .divText{
+      flex:1 1;
+      margin-top: 60px;
+      top:30px;
+
+      h3{
+        font-size: 28px;
+        font-weight: bold;
+        color:#fff;
+      }
+      h5{
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        color:#fff;
+      }
+      .divDescImg{
+        margin-top: 20px;
+        img{
+          width: 120px;
+          height: 120px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: 1300px) {
+  .content {
+    height:600px;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding:1% 10%;
+}
+
+.nav{
+  ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    li{
+      list-style: none;
+      font-size: 1.05rem;
+      font-family: sans-serif!important;
+      &:after{
+        content:"|";
+        padding:0 8px;
+      }
+      &:nth-child(4){
+        &:after{
+          content:"";
+        }
+      }
+    }
+  }
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.title {
+  font-size: 33px;
+  color: @heading-color;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
+
+

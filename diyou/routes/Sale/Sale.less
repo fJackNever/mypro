@@ -1,0 +1,83 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+
+.ChartCard{ margin:10px;}
+
+.ant-advanced-search-form {
+  padding: 24px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.ant-advanced-search-form .ant-form-item {
+  display: flex;
+}
+
+.ant-advanced-search-form .ant-form-item-control-wrapper {
+  flex: 1;
+}
+
+.headerInfo {
+  position: relative;
+  text-align: center;
+  & > span {
+    color: @text-color-secondary;
+    display: inline-block;
+    font-size: @font-size-base;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+  & > p {
+    color: @heading-color;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  & > em {
+    background-color: @border-color-split;
+    position: absolute;
+    height: 56px;
+    width: 1px;
+    top: 0;
+    right: 0;
+  }
+}
+.RowCol{
+  cursor:pointer;background:#fff;padding:20px 0px;
+}
+
+//快速入口按钮
+.QuickButton{ margin-right:24px;margin-bottom: 10px}
+//快速查询元素
+.QuickFormItem{ width:80%;}
+//导入导出中导入card模块
+.ImportDiv{margin-bottom:15px;}
+.ImportDiv p{display:inline-block;font-weight: bolder;}
+.ImportDiv button{ margin-left: 20px}
+
+
+//Tag - Button
+.TagBtnDiv{display:flex;flex-flow: row}
+.TagBtn{padding:0px 15px !important;height:32px  !important;line-height:32px  !important}
+
+//Table 的column样式
+.rowStyle{border:1px solid red;}
+@media screen and (max-width: 800px) {
+  .RowCol{ width:100%;margin-bottom:12px;}
+  //快速入口按钮
+  .QuickButton{ margin-right:0px;margin-bottom: 10px}
+  //快速查询元素
+  .QuickFormItem{ width:90%;margin-bottom:10px !important;}
+  //表格
+  th{ min-width: 150px}
+  //导入导出中导入card模块
+  .ImportDiv{ display:flex;flex-flow:column;}
+  .ImportDiv p{width:100%;}
+  .ImportDiv button{ margin-bottom:20px;margin-top:0px !important;margin-left:0px;}
+  //Tag - Button
+  .TagBtnDiv{display:flex;flex-flow: row}
+  .TagBtn{margin-left: 0px !important;}
+}
+

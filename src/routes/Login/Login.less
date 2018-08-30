@@ -1,0 +1,66 @@
+@import "../../../node_modules/antd/lib/style/themes/default.less";
+
+.main {
+  width: 400px;
+  padding:24px;
+  background: #fff;
+  right:8%;
+  top:5px;
+  position:absolute;
+  :global{
+    .ant-tabs-bar{
+      border-bottom: 0;
+      text-align: center;
+    }
+  }
+
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .register {
+      float: right;
+    }
+  }
+
+  .loginBtn{
+    width:100%;
+    margin-top: -10px;
+    height:40px;
+  }
+
+}
+
+//滑块部分
+.sliperDiv{height:45px;background:#DAE2D0;text-align: center;position:relative;}
+.sliperText{position:absolute;width:100%;height:45px !important;ling-height:45px !important;text-align: center;z-index:13;}
+.sliperBg{position:absolute;top:0px;left:0px;bottom:0px;right:0px;z-index:10;width:0px;text-align: center;background:#2CC64D;color:#fff;height:45px !important;ling-height:45px !important;}
+.sliperP{position:absolute;width:45px;height:45px;top:0px;left:0px;border:1px solid #ddd;text-align: center;background:#fff;z-index:15;cursor:move}
+
+@media screen and (max-width: @screen-sm-min) {
+    .main{
+      width:90%;
+      left:5%;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    .main{
+      top:50px;
+    }
+  }

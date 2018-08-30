@@ -1,0 +1,267 @@
+@import "../../../node_modules/antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+.headerBread{
+
+}
+//Tag - Button
+.TagBtnDiv{display:flex;flex-flow: row}
+.TagBtn{padding:0px 15px !important;height:32px  !important;line-height:32px  !important}
+
+#Showed{border:1px solid red;
+  position: fixed;
+  overflow: auto;
+  top: 0;right: 0;bottom: 0;left: 0;z-index: 1000;background:rgba(0, 0, 0, 0.65);
+}
+.isShowDiv{position:absolute;z-index:1000;border:1px solid red;}
+
+.activitiesList {
+  padding: 0 24px 8px 24px;
+  .username {
+    color: @text-color;
+  }
+  .event {
+    font-weight: normal;
+  }
+}
+
+.pageHeaderContent {
+  display: flex;
+  .avatar {
+    flex: 0 1 72px;
+    margin-bottom: 8px;
+    & > span {
+      border-radius: 72px;
+      display: block;
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .content {
+    position: relative;
+    top: 4px;
+    margin-left: 24px;
+    flex: 1 1 auto;
+    color: @text-color-secondary;
+    line-height: 22px;
+    .contentTitle {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 500;
+      color: @heading-color;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.extraContent {
+  .clearfix();
+  float: right;
+  white-space: nowrap;
+  .statItem {
+    padding: 0 32px;
+    position: relative;
+    display: inline-block;
+    > p:first-child {
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
+    > p {
+      color: @heading-color;
+      font-size: 30px;
+      line-height: 38px;
+      margin: 0;
+      > span {
+        color: @text-color-secondary;
+        font-size: 20px;
+      }
+    }
+    &:after {
+      background-color: @border-color-split;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 1px;
+      height: 40px;
+      content: '';
+    }
+    &:last-child {
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.members {
+  a {
+    display: block;
+    margin: 12px 0;
+    line-height: 24px;
+    height: 24px;
+    .textOverflow();
+    .member {
+      font-size: @font-size-base;
+      color: @text-color;
+      line-height: 24px;
+      max-width: 100px;
+      vertical-align: top;
+      margin-left: 12px;
+      transition: all .3s;
+      display: inline-block;
+      .textOverflow();
+    }
+    &:hover {
+      span {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.projectList {
+  :global {
+    .ant-card-meta-description {
+      color: @text-color-secondary;
+      height: 44px;
+      line-height: 22px;
+      overflow: hidden;
+    }
+  }
+  .cardTitle {
+    font-size: 0;
+    a {
+      color: @heading-color;
+      line-height: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: @font-size-base;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .projectGrid {
+    width: 33.33%;
+  }
+  .projectItemContent {
+    display: flex;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    .textOverflow();
+    a {
+      color: @text-color-secondary;
+      display: inline-block;
+      flex: 1 1 0;
+      .textOverflow();
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .datetime {
+      color: @disabled-color;
+      flex: 0 0 auto;
+      float: right;
+    }
+  }
+}
+
+.datetime {
+  color: @disabled-color;
+}
+
+.statItem:hover {
+  cursor: pointer;
+}
+
+//快速操作入口
+.workOperation{
+  margin-bottom:24px;text-align: center;display: flex;flex-flow: row;
+}
+.workOperationfirst{
+  width:40%;float: left;padding:15px 0px;height:100%;
+}
+.workOperationlast{
+  width:60%;float: left;padding:12px 0px;display: flex;flex-flow: column;
+}
+.workOperationlast>div{text-align: left;padding-left:24px}
+.workOperationtext{
+  width: 150px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: @screen-xl)  and (min-width: @screen-lg) {
+  .activeCard {
+    margin-bottom: 24px;
+  }
+  .members {
+    margin-bottom: 0;
+  }
+  .extraContent {
+    margin-left: -44px;
+    .statItem {
+      padding: 0 16px;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .activeCard {
+    margin-bottom: 24px;
+  }
+  .members {
+    margin-bottom: 0;
+  }
+  .extraContent {
+    float: none;
+    margin-right: 0;
+    .statItem {
+      padding: 0 16px;
+      text-align: left;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .extraContent {
+    margin-left: -16px;
+  }
+  .projectList {
+    .projectGrid {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .pageHeaderContent {
+    display: block;
+    .content {
+      margin-left: 0;
+    }
+  }
+  .extraContent {
+    .statItem {
+      float: none;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .projectList {
+    .projectGrid {
+      width: 100%;
+    }
+  }
+}

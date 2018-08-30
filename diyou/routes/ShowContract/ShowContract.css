@@ -1,0 +1,38 @@
+.ContractId{
+  line-height: 1.08365;
+  font-weight: 600;
+  letter-spacing: -.003em;
+  font-family: SF Pro SC,SF Pro Text,SF Pro Icons,AOS Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.ContractDiv{
+  width:100%;margin:0px auto;
+}
+.ContractTitle{
+  margin:20px 0px;
+  font-size: 21px;
+  font-family: 宋体,SimSun;
+  color: #373D41;
+}
+p{
+  font-family: 宋体,SimSun;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+ul li{
+  list-style: none;
+}
+.ContractBottom{
+  display:flex;flex-flow:row;margin-top:8%;
+}
+@media screen and (max-width: 800px) {
+  .ContractDiv{
+    width:100%;margin:0px auto;
+  }
+  .ContractBottom{
+    display:flex;flex-flow:column;margin-top:15%;
+  }
+  .ContractBottom>div:nth-child(2){
+    margin-top:20px;
+  }
+
+}

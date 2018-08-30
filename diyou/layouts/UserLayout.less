@@ -1,0 +1,89 @@
+@import "~antd/lib/style/themes/default.less";
+.normal {
+  width:100%;height:100%;min-width:1300px;
+}
+.loginTop{
+  display:flex;flex-flow:row;padding:1% 10%;
+}
+.loginTop>div{
+  flex:1;position:relative;
+}
+.loginTop ul{
+  position:absolute;right:0px;
+}
+.loginTop ul li{
+  height:40px;line-height:40px;display:inline-block;list-style:none;font-size:1.2em;
+}
+.loginTop ul li.lineLi{
+  margin:0 0.5em;
+}
+.login{
+  width:100%;height:650px;
+  background: url(https://rescdn.qqmail.com/bizmail/zh_CN/htmledition/images/bizmail/login_background25dcc7.png) no-repeat;
+  background-size: 4000px 650px;
+  background-position:right;
+  position:relative;
+}
+.loginRight{
+  width:25%;background:#fff;height:400px;position:absolute;right:8%;top:25px;
+}
+.RightName{
+  text-align:center;margin:3% 0px 5%;font-size:1.4em;
+}
+.ant-input{
+  height:50px !important;
+}
+
+#components-form-demo-normal-login .login-form {
+  width:100%;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100% !important;
+}
+
+.showXs{ display:none;}
+
+
+/*轮播图*/
+.antCarousel {width: 100%;display:block;margin-top:8%;}
+.slickslide{ display:flex !important;flex-flow: row !important;margin-bottom: 1%}
+.slickslide .divText{flex:1;}
+.slickslide .divText>div{ color:#fff;}
+.slickslide .divText .divTextTitle{font-size:28px;font-weight: bold;margin-top:60px;}
+.slickslide .divText .divTextdesc{font-size:16px;margin-top:20px;height:30px;line-height: 30px}
+.slickslide .divText img{width:120px;height:120px;border-radius: 3px}
+.antCarousel .slickslide .divImg{ width:50%;}
+.antCarousel .slickslide .divImg img{width:190px;margin:0px auto}
+
+@media screen and (max-width: @screen-sm) {
+  .container{width:100%;height:100vh;}
+  .login{ width:100%;
+    background: url(https://rescdn.qqmail.com/bizmail/zh_CN/htmledition/images/bizmail/login_background25dcc7.png) no-repeat;
+    background-size: 100% 100%;
+    background-position:100% 50%;position:relative;}
+  .footer{ width:100%;}
+  .footer a{ margin-right:20px !important;}
+  .loginTop{ padding:5%;}
+  .ul{ display:none;}
+  .showXs{ display:inline-block;height:40px;line-height:40px;text-align:right;font-size:16px;}
+}
+
+@media screen and (min-width: 1300px) {
+  .login {
+    height: 600px;
+  }
+
+  /*轮播图*/
+  .antCarousel {width: 100%;display:block;margin-top:8%;}
+  .slickslide{ display:flex !important;flex-flow: row !important;margin-bottom: 1%}
+  .slickslide .divText{flex:1;}
+  .slickslide .divText>div{ color:#fff;}
+  .slickslide .divText .divTextTitle{font-size:28px;font-weight: bold;margin-top:60px;}
+  .slickslide .divText .divTextdesc{font-size:16px;margin-top:20px;height:30px;line-height: 30px}
+  .slickslide .divText img{width:120px;height:120px;border-radius: 3px}
+  .antCarousel .slickslide .divImg{ width:50%;}
+  .antCarousel .slickslide .divImg img{width:190px;margin:0px auto}
+}

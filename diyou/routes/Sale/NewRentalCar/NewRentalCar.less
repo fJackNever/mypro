@@ -1,0 +1,265 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../../utils/utils.less";
+
+
+input:disabled{
+  background-color: #f5f7fa;
+  border-color: #dfe4ed;
+  color: #b4bccc;
+}
+.ant-select-disabled{
+  background-color: #f5f7fa !important;
+  border-color: #dfe4ed !important;
+  color: #b4bccc !important;
+}
+
+.breadcrumb{
+  border-bottom: 1px solid #e8e8e8;
+}
+.content {
+  margin: 24px 24px 0;border:1px solid blue;
+}
+.RowCol{ margin-bottom:10px;}
+
+/*普通from*/
+.form{
+    width:100%;display:flex;
+}
+.formDiv{ flex:1;}
+.formButtonDiv{ width:50%;margin:0 auto;text-align:center;}
+/*简单from表单*/
+.SimpleForm{ width:50%;margin:0 auto;padding:2% 0px;}
+
+/*上传图片Card组件*/
+.UploadCard{ display:flex !important;flex-flow:row !important;}
+
+/**/
+//车辆记录组件
+.projectList {
+  :global {
+    .ant-card-meta-description {
+      color: @text-color-secondary;
+      line-height: 22px;
+      overflow: hidden;
+    }
+  }
+  .cardTitle {
+    font-size: 0;
+    a {
+      color: @heading-color;
+      margin-left: 12px;
+      line-height: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: @font-size-base;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .projectGrid {
+    width: 12.5%;
+  }
+  .projectItemContent {
+    display: flex;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    .textOverflow();
+    a {
+      color: @text-color-secondary;
+      display: inline-block;
+      flex: 1 1 0;
+      .textOverflow();
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .datetime {
+      color: @disabled-color;
+      flex: 0 0 auto;
+      float: right;
+    }
+  }
+}
+.projectList2 {
+  :global {
+    .ant-card-meta-description {
+      color: @text-color-secondary;
+      padding:10px 0px;
+      line-height: 22px;
+      overflow: hidden;
+    }
+  }
+  .cardTitle {
+    font-size: 0;
+    a {
+      color: @heading-color;
+      margin-left: 12px;
+      line-height: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: @font-size-base;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .projectGrid {
+    width: 16.66%;
+  }
+  .projectItemContent {
+    display: flex;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    .textOverflow();
+    a {
+      color: @text-color-secondary;
+      display: inline-block;
+      flex: 1 1 0;
+      .textOverflow();
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .datetime {
+      color: @disabled-color;
+      flex: 0 0 auto;
+      float: right;
+    }
+  }
+}
+/*查看具体信息图片*/
+.imgBorder{
+  display:inline-block;
+  margin:0px 0px;
+  border-radius:5px;
+  background:#fff;
+}
+.imgBorder img{
+  width:200px;
+  height:auto;
+  display:block;
+}
+.ant-upload-list-picture-card .ant-upload-list-item{
+  width: 200px !important;
+  height: auto !important;
+}
+
+//Tag - Button
+.TagBtnDiv{display:flex;flex-flow: row}
+.TagBtn{padding:0px 15px !important;height:32px  !important;line-height:32px  !important}
+
+//flex3
+.Flex3{display:flex;flex-flow:row;}
+.Flex3>div{flex:1;}
+
+.pageHeaderContent {
+  display: flex;
+  .avatar {
+    flex: 0 1 72px;
+    margin-bottom: 8px;
+    & > span {
+      border-radius: 72px;
+      display: block;
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .content {
+    position: relative;
+    top: 4px;
+    margin-left: 24px;
+    flex: 1 1 auto;
+    color: @text-color-secondary;
+    line-height: 22px;
+    .contentTitle {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 500;
+      color: @heading-color;
+      margin-bottom: 12px;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .projectList {
+    .projectGrid {
+      width: 12.5%;
+    }
+  }
+}
+//车辆记录组件
+@media screen and (max-width: @screen-md) {
+  .projectList {
+    .projectGrid {
+      width: 50%;
+    }
+  }
+  .projectList2 {
+    .projectGrid {
+      width: 50%;
+    }
+  }
+  .content {
+    margin: 24px 0 0;
+  }
+  /*普通from*/
+  .form{
+    width:100%;display:flex;flex-flow:column;
+  }
+  .formDiv{ width:100%;}
+  .formButtonDiv{ width:100%;margin:0 auto;text-align:center;}
+  .formButton{ width:100%;text-align:center;}
+  /*简单from表单*/
+  .SimpleForm{ width:100%;margin:0 auto;padding:0px;}
+  /*上传图片Card组件*/
+  .UploadCard{ display:flex !important;flex-flow:column !important;}
+}
+//车辆记录组件
+@media screen and (max-width: @screen-xs) {
+  .projectList {
+    .projectGrid {
+      width: 50%;
+    }
+  }
+  .projectList2 {
+    .projectGrid {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .content {
+    margin: 24px 0 0;
+  }
+  /*普通from*/
+  .form{
+    width:100%;display:flex;flex-flow:column;
+  }
+  .formDiv{ width:100%;}
+  .formButtonDiv{ width:100%;margin:0 auto;text-align:center;}
+  .formButton{ width:100%;text-align:center;}
+  /*简单from表单*/
+  .SimpleForm{ width:100%;margin:0 auto;padding:0px;}
+  /*上传图片Card组件*/
+  .UploadCard{ display:flex !important;flex-flow:column !important;}
+
+
+  .Flex3{display:flex;flex-flow:column;}
+  .Flex3>div{width:100%;display:block;}
+}
+
+
+
+.ant-card-actions{
+  background:#fff !important;
+}

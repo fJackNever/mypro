@@ -1,0 +1,75 @@
+
+@import "../../../node_modules/antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+/*第一块*/
+.pcRowCol{ display:flex;flex-flow:row;padding:0px 15px;}
+.pcRowCol>p{ height:32px;line-height:32px;min-width: 25%;}
+.pcRowCol>text{height:32px;line-height:32px;}
+
+/*版本介绍模块*/
+.bbIntroduce{ width:33%;padding:5px 0px;}
+/**/
+.PCformItem{ width:50%;display:inline-block;}
+.PCformButton{ width:20%;display:inline-block;margin-left:15%;}
+/*订单记录*/
+.headerInfo {
+  position: relative;
+  text-align: center;
+  & > span {
+    color: @text-color-secondary;
+    display: inline-block;
+    font-size: @font-size-base;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+  & > p {
+    color: @heading-color;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  & > em {
+    background-color: @border-color-split;
+    position: absolute;
+    height: 56px;
+    width: 1px;
+    top: 0;
+    right: 0;
+  }
+}
+.RowCol{
+  cursor:pointer;
+}
+/*支付界面*/
+.payDiv{width:80% !important;margin:0px auto;}
+
+
+/*普通from*/
+.form{
+  width:100%;display:flex;flex-flow:row;
+}
+.formDiv{ width:100%;}
+.formButtonDiv{ width:100%;margin:0 auto;text-align:center;}
+
+@media screen and (max-width: @screen-sm) {
+ .bbIntroduce{ width:100%;padding:5px 0px;}
+  .pcRowCol{ display:flex;flex-flow:row;padding:0px 15px;}
+  .pcRowCol>p{ height:32px;line-height:32px;min-width: 25%;}
+  .pcRowCol>text{ display:none;}
+  .PCformItem{ width:100%;}
+  .PCformButton{width:100%;margin-left:0px;}
+  .PCformButton button{ width:95%;margin-left:2.5%;}
+
+  /*普通from*/
+  .form{
+    width:100%;display:flex;flex-flow:column;
+  }
+  .formDiv{ width:100%;}
+  .formButtonDiv{ width:100%;margin:0 auto;text-align:center;}
+  .formButton{ width:100%;text-align:center;}
+
+  /*支付界面*/
+  .payDiv{width:100% !important;margin:0px auto;}
+}
+
