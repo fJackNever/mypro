@@ -26,10 +26,6 @@ class login extends Component {
 
   }
 
-  handleaaa = () =>{
-    
-  }
-
   componentDidMount(){
     let formData = new FormData();
     formData.append('key', 'diuber2017');
@@ -37,6 +33,9 @@ class login extends Component {
     logoutEnd(formData).then((data)=>{}).catch(error => {})
   }
 
+  handleaaa = () =>{
+    
+  }
 
   handleSubmit = (e) => {
     e.preventDefault();
