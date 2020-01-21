@@ -22,7 +22,12 @@ class login extends Component {
     loading:false
   };
 
+
   handleaaa = () =>{
+    
+  }
+
+  handlebbb = () =>{
 
   }
 
