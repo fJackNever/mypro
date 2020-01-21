@@ -106,7 +106,7 @@ class login extends Component {
     return (
       <div className={styles.main}>
           <Tabs defaultActiveKey="1">
-            <TabPane tab="账号登陆" key={1}>
+            <TabPane tab="登陆" key={1}>
               <Form className="login-form">
                   <FormItem>
                     {getFieldDecorator('companyId', {
@@ -143,7 +143,7 @@ class login extends Component {
                   <Button type="primary" onClick={this.handleSubmit} loading={this.state.loading} htmlType="submit" className={styles.loginBtn}>登陆</Button>
               </Form>
             </TabPane>
-            <TabPane tab="立即注册" key={2}>
+            <TabPane tab="注册" key={2}>
               <Form className="login-form">
                 <FormItem>
                   {getFieldDecorator('companyName', {
