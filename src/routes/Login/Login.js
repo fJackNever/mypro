@@ -106,7 +106,7 @@ class login extends Component {
               <Form className="login-form">
                   <FormItem>
                     {getFieldDecorator('companyId', {
-                      rules: [{ required: true, message: '公司号不能为空' }],
+                      rules: [{ required: true, message: '公司号不能' }],
                     })(
                       <Input size="large" prefix={<Icon type="laptop" style={{ color: 'rgba(0,0,0,1)' }} />} placeholder="请输入公司号" />
                     )}
