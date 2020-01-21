@@ -29,7 +29,6 @@ class login extends Component {
     logoutEnd(formData).then((data)=>{}).catch(error => {})
   }
 
-
   handleSubmit = (e) => {
     e.preventDefault();
     if($('#sliperBg').html() === '验证成功'){
