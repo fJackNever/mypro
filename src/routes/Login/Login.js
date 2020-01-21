@@ -22,10 +22,6 @@ class login extends Component {
     loading:false
   };
 
-  handleaaa = () =>{
-
-  }
-
   componentDidMount(){
     let formData = new FormData();
     formData.append('key', 'diuber2017');
