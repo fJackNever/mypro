@@ -22,6 +22,10 @@ class login extends Component {
     loading:false
   };
 
+  handleaaa = () =>{
+
+  }
+
   componentDidMount(){
     let formData = new FormData();
     formData.append('key', 'diuber2017');
@@ -102,11 +106,11 @@ class login extends Component {
     return (
       <div className={styles.main}>
           <Tabs defaultActiveKey="1">
-            <TabPane tab="登陆" key={1}>
+            <TabPane tab="账号登陆" key={1}>
               <Form className="login-form">
                   <FormItem>
                     {getFieldDecorator('companyId', {
-                      rules: [{ required: true, message: '公司号不能' }],
+                      rules: [{ required: true, message: '公司号不能为空' }],
                     })(
                       <Input size="large" prefix={<Icon type="laptop" style={{ color: 'rgba(0,0,0,1)' }} />} placeholder="请输入公司号" />
                     )}
@@ -139,7 +143,7 @@ class login extends Component {
                   <Button type="primary" onClick={this.handleSubmit} loading={this.state.loading} htmlType="submit" className={styles.loginBtn}>登陆</Button>
               </Form>
             </TabPane>
-            <TabPane tab="注册" key={2}>
+            <TabPane tab="立即注册" key={2}>
               <Form className="login-form">
                 <FormItem>
                   {getFieldDecorator('companyName', {
