@@ -22,13 +22,12 @@ class login extends Component {
     loading:false
   };
 
+  handlebbb = () =>{
+
+  }
 
   handleaaa = () =>{
     
-  }
-
-  handlebbb = () =>{
-
   }
 
   componentDidMount(){
