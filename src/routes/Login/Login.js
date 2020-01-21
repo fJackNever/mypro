@@ -22,19 +22,11 @@ class login extends Component {
     loading:false
   };
 
-  handlebbb = () =>{
-
-  }
-
   componentDidMount(){
     let formData = new FormData();
     formData.append('key', 'diuber2017');
     formData.append("secret_key", '09e8b1b88e615f0d9650886977af33e9');
     logoutEnd(formData).then((data)=>{}).catch(error => {})
-  }
-
-  handleaaa = () =>{
-    
   }
 
   handleSubmit = (e) => {
