@@ -22,6 +22,10 @@ class login extends Component {
     loading:false
   };
 
+  handlebbb = () =>{
+
+  }
+
   componentDidMount(){
     let formData = new FormData();
     formData.append('key', 'diuber2017');
@@ -106,7 +110,7 @@ class login extends Component {
               <Form className="login-form">
                   <FormItem>
                     {getFieldDecorator('companyId', {
-                      rules: [{ required: true, message: '公司号不能' }],
+                      rules: [{ required: true, message: '公司号不能为空' }],
                     })(
                       <Input size="large" prefix={<Icon type="laptop" style={{ color: 'rgba(0,0,0,1)' }} />} placeholder="请输入公司号" />
                     )}
